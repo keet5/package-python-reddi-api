@@ -43,6 +43,6 @@ def post_dict_handler(post):
     elif not "post_hint" in post and "media_metadata" in post:
         post["post_hint"] = "metadata"
     else:
-        post["post_hint"] = f" What the Hell Are You? {post['id']}"
+        post["post_hint"] = f"{post['id']}"
 
     return post
